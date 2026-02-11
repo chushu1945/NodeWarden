@@ -23,7 +23,7 @@ export interface Attachment {
 export interface User {
   id: string;
   email: string;
-  name: string;
+  name: string | null;
   masterPasswordHash: string;
   key: string;
   privateKey: string | null;
@@ -119,7 +119,7 @@ export interface Cipher {
   userId: string;
   type: CipherType;
   folderId: string | null;
-  name: string;
+  name: string | null;
   notes: string | null;
   favorite: boolean;
   login: CipherLogin | null;
@@ -200,7 +200,7 @@ export interface TokenResponse {
 
 export interface ProfileResponse {
   id: string;
-  name: string;
+  name: string | null;
   email: string;
   emailVerified: boolean;
   premium: boolean;
@@ -227,7 +227,7 @@ export interface CipherResponse {
   organizationId: string | null;
   folderId: string | null;
   type: number;
-  name: string;
+  name: string | null;
   notes: string | null;
   favorite: boolean;
   login: CipherLogin | null;

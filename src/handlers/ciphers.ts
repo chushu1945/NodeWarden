@@ -116,7 +116,7 @@ export async function handleCreateCipher(request: Request, env: Env, userId: str
     userId: userId,
     type: Number(cipherData.type) || 1,
     folderId: cipherData.folderId || null,
-    name: cipherData.name,
+    name: cipherData.name || null,
     notes: cipherData.notes || null,
     favorite: cipherData.favorite || false,
     login: cipherData.login || null,
