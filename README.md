@@ -10,7 +10,7 @@ English：[`README_EN.md`](./README_EN.md)
 ---
 ## 与 Bitwarden 官方服务端能力对比
 
-| 能力项 | Bitwarden  | NodeWarden | 说明 |
+| 能力项 | Bitwarden | NodeWarden | 说明 |
 |---|---|---|---|
 | 单用户保管库（登录/笔记/卡片/身份） | ✅ | ✅ | 基于Cloudflare D1 |
 | 文件夹 / 收藏 | ✅ | ✅ | 常用管理能力可用 |
@@ -18,9 +18,10 @@ English：[`README_EN.md`](./README_EN.md)
 | 附件上传/下载 | ✅ | ✅ | 基于 Cloudflare R2 |
 | 导入功能 | ✅ | ✅ | 覆盖常见导入路径 |
 | 网站图标代理 | ✅ | ✅ | 通过 `/icons/{hostname}/icon.png` |
+| 密码条目 TOTP 字段 | ❌ | ✅ |官方需要会员，我们的不需要 |
 | 多用户 | ✅ | ❌ | NodeWarden 定位单用户 |
 | 组织/集合/成员权限 | ✅ | ❌ | 没必要实现 |
-| 完整 2FA（TOTP/WebAuthn/Duo/Email） | ✅ | ❌ | 没必要实现 |
+| 登录 2FA（TOTP/WebAuthn/Duo/Email） | ✅ | ❌ | 暂未实现 |
 | SSO / SCIM / 企业目录 | ✅ | ❌ | 没必要实现 |
 | Send | ✅ | ❌ | 基本没人用 |
 | 紧急访问 | ✅ | ❌ | 没必要实现 |

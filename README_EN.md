@@ -20,9 +20,10 @@ A **Bitwarden-compatible** server that runs on **Cloudflare Workers**.
 | Attachment upload/download | ✅ | ✅ | Backed by Cloudflare R2 |
 | Import flow (common clients) | ✅ | ✅ | Common import paths covered |
 | Website icon proxy | ✅ | ✅ | Via `/icons/{hostname}/icon.png` |
+| Vault item TOTP field | ❌ | ✅ | Official service requires premium; NodeWarden does not |
 | Multi-user | ✅ | ❌ | NodeWarden is single-user by design |
 | Organizations / Collections / Member roles | ✅ | ❌ | Not necessary to implement |
-| Full 2FA (TOTP/WebAuthn/Duo/Email) | ✅ | ❌ | Not necessary to implement |
+| Login 2FA (TOTP/WebAuthn/Duo/Email) | ✅ | ❌ | Not implemented yet |
 | SSO / SCIM / Enterprise directory | ✅ | ❌ | Not necessary to implement |
 | Send | ✅ | ❌ | Not necessary to implement |
 | Emergency access | ✅ | ❌ | Not necessary to implement |
